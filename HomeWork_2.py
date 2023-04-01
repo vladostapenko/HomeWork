@@ -16,6 +16,6 @@ print()
 a = int(input('Enter a: '))  # Enter 3
 b = int(input('Enter b: '))  # Enter 5
 sum_a_b = a + b
-prod = a * b
+prod_a_b = a * b
 print(a, '+', b, '=', sum_a_b)
-print(a, '*', b, '=', prod)
+print(a, '*', b, '=', prod_a_b)
