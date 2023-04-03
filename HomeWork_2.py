@@ -6,7 +6,6 @@ print(*pets, sep=', ', end='\n\n')
 # task 2
 country = ['Ukraine', 'Spain', 'Italy']
 capital = {'Ukraine': 'Kyiv', 'Spain': 'Madrid', 'Italy': 'Rome'}
-
 for country, capital in capital.items():
     print(country + ': ' + capital)
 print()
