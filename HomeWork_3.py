@@ -21,6 +21,7 @@ for d in range(1, triangle_size + 1):
         print('*', end='')
     print()
 
+
 # task 4
 
 
