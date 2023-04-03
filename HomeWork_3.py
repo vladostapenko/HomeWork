@@ -13,4 +13,15 @@ for i in range(height):
     print(row)
 
 # task 3
-triangle_size = int(input())
+triangle_size = int(input("Enter size of triangle: "))    # Enter 5
+for d in range(1, triangle_size + 1):
+    for e in range(triangle_size - d):
+        print(" ", end="")
+    for e in range(d):
+        print('*', end='')
+    print()
+
+# task 4
+
+
+
