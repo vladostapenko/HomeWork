@@ -7,7 +7,7 @@ print(max(a, b, c))
 # task 2
 height = int(input('Enter height of rectangular: '))   # Enter 3
 width = int(input('Enter width of rectangular: '))  # Enter 6
-special_symbol = input('Enter symbol to build rectangular with: ')  # Enter ^
+special_symbol = input('Enter symbol: ')  # Enter ^
 row = special_symbol * width
 for i in range(height):
     print(row)
