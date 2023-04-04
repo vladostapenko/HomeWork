@@ -1,8 +1,18 @@
 # task 1
-a = int(input('Enter number: '))
-b = int(input('Enter number: '))
-c = int(input('Enter number: '))
-print(max(a, b, c))
+a = int(input("Enter number: "))
+b = int(input("Enter number: "))
+c = int(input("Enter number: "))
+if a > b:
+    if a > c:
+        print(a)
+    else:
+        print(c)
+else:
+    if b > c:
+        print(b)
+    else:
+        print(c)
+
 
 # task 2
 height = int(input('Enter height: '))   # Enter 3
@@ -20,9 +30,6 @@ for d in range(1, triangle_size + 1):
     for e in range(d):
         print('*', end='')
     print()
-
-
-# task 4
 
 
 
