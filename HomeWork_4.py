@@ -1,17 +1,21 @@
 # task 1: Валидатор почтового адреса
-email = "aaa@bbb.ccc"  # True
-if email.startswith('@') and email.endswith('.'):
-    print("False")
+email = "aaa@bbb.ccc"  # True   aaa@bbb.ccc
+if email.count("@") == 1 and email.count(".") == 1:
+    at_index = email.index("@")
+    dot_index = email.index(".")
+    if at_index < dot_index and email[0] != "@" and email[-1] != ".":
+        print(True)
+    else:
+        print(False)
 else:
-    print('True')
-if email.count('@') and email.count('.') == 1:
-    print('True')
-else:
-    print('False')
-if email.find('@') < email.find('.'):
-    print('True')
-else:
-    print('False')
+    print(False)
+"""
+abc@ccc. - False
+aabbcc.ccc - False
+@abc.ccc - False
+aaabbb.c@cc - False
+aaa@b@bb.ccc - False
+"""
 
 
 # task 2: Поиск слов по условию
@@ -38,7 +42,7 @@ print(words_number)
 
 
 # task 4: Палиндром
-str1 = input().strip().lower()  # 1st input - "    aBC cba " , 2nd input - "a BCQcb a    " , 3rd input - " ab bca"
-str1_reversed = str1[::-1]
-print(str1 == str1_reversed)
+# str1 = input().strip().lower()  # 1st input - "    aBC cba " , 2nd input - "a BCQcb a    " , 3rd input - " ab bca"
+# str1_reversed = str1[::-1]
+# print(str1 == str1_reversed)
 
